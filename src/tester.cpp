@@ -27,12 +27,13 @@
 #include <stdint.h>
 
 #include <boost/filesystem.hpp>
+#include <iostream>
 
 using namespace std;
 
 int main() {
     st_strings_handle sh;
-    const char * path = "/media/oliver/6CF05918F058EA3A/Users/Oliver/Downloads/Strings/Skyrim_Japanese.STRINGS";
+    const char * path = "/home/hvt/Code/skyrim/data/SkyrimSE_Strings_English/Strings/Hearthfires_English.DLSTRINGS";
     const char * newPath = "/media/oliver/6CF05918F058EA3A/Users/Oliver/Downloads/Strings/Skyrim_Japanese.STRINGS";
     const char * testMessage = "This is a test message.";
     unsigned int ret;

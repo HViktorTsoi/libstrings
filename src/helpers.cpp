@@ -59,6 +59,7 @@ namespace libstrings {
         try {
             return boost::locale::conv::from_utf<char>(str, encoding, boost::locale::conv::stop);
         } catch (boost::locale::conv::conversion_error& e) {
+            cout << "\n\n\n\n" << e.what() << "\n\n\n\n";
             throw error(LIBSTRINGS_ERROR_BAD_STRING, "\"" + str + "\" cannot be encoded in " + encoding + ".");
         }
     }
